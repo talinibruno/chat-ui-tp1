@@ -1,0 +1,180 @@
+/*-------------------------------------- CSS Base -------------------------------------- */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Manrope;
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  padding: 5px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+
+img {
+  max-width: 40px;
+}
+
+/*-------------------------------------- Estilado del aside -------------------------------------- */
+
+.sidebar {
+  background-color: #fefefe;
+  min-width: 200px;
+  max-width: 350px;
+  padding: 15px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px;
+  border-right-color: #cacaca;
+  border-right-style: inset;
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+.selected-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  background-color: #efefef;
+  border-radius: 5px;
+}
+
+.status-offline {
+  color: #686e73;
+  font-size: 12px;
+}
+
+.status-online {
+  color: #686e73;
+  font-size: 12px;
+}
+
+.status-offline::before {
+  content: "🔴 ";
+}
+
+.status-online::before {
+  content: "🟢 ";
+}
+
+.sidebar input {
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px;
+  border-color: #cacaca;
+  border-style: inset;
+}
+
+/*-------------------------------------- Estilado del main -------------------------------------------------*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.active-chat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px;
+  border-bottom-color: #cacaca;
+  border-bottom-style: inset;
+}
+
+.chat-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f7f8fa;
+  flex: 1;
+  padding: 15px;
+  gap: 15px;
+
+}
+
+.message-sent {
+  align-self: flex-end;
+  background-color: #e4f1f7;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+.message-recived {
+  background-color: #ededed;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+.timestamp {
+  color: #686e73;
+  font-size: 12px;
+}
+
+.chat-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 15px;
+  border-top: 1px;
+  border-top-color: #cacaca;
+  border-top-style: inset;
+
+}
+
+.chat-footer input {
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px;
+  border-color: #cacaca;
+  border-style: inset;
+}

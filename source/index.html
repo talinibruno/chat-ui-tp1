@@ -5,6 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat UI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -18,9 +27,50 @@
         <img src="avatar.jpeg" alt="imagen de perfil del contacto">
         <div>
           <h4>Vincent Porter</h4>
-          <p class="status">left 7 minutes</p>
+          <p class="status-offline">left 7 minutes ago</p>
         </div>
       </li>
+
+      <li class="selected-contact">
+        <img src="avatar.png" alt="imagen de perfil del contacto">
+        <div>
+          <h4>Aiden Chavez</h4>
+          <p class="status-online">online</p>
+        </div>
+      </li>
+
+      <li class="contact">
+        <img src="avatar.jpeg" alt="imagen de perfil del contacto">
+        <div>
+          <h4>Mike Thomas</h4>
+          <p class="status-online">online</p>
+        </div>
+      </li>
+
+      <li class="contact">
+        <img src="avatar.jpeg" alt="imagen de perfil del contacto">
+        <div>
+          <h4>Christian Kelly</h4>
+          <p class="status-offline">left 10 hours ago</p>
+        </div>
+      </li>
+
+      <li class="contact">
+        <img src="avatar.jpeg" alt="imagen de perfil del contacto">
+        <div>
+          <h4>Monica Ward</h4>
+          <p class="status-online">online</p>
+        </div>
+      </li>
+
+      <li class="contact">
+        <img src="avatar.jpeg" alt="imagen de perfil del contacto">
+        <div>
+          <h4>Dean Henry</h4>
+          <p class="status-offline">offline since Oct 28</p>
+        </div>
+      </li>
+
 
     </ul>
 
@@ -28,7 +78,7 @@
 
   <main class="chat">
 
-    <section>
+    <section class="active-chat">
       <div class="chat-header">
         <img src="avatar.jpeg" alt="imagen de perfil del contacto">
         <h3>Aiden Chavez</h3>
@@ -37,6 +87,7 @@
 
       <div class="chat-actions">
 
+        <button title="Adjuntar">📎</button>
         <button title="Sacar foto">📷</button>
         <button>🖼️</button>
         <button>⚙️</button>

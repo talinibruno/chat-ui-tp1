@@ -1,4 +1,4 @@
-/*-------------------------------------- CSS Base -------------------------------------- */
+/*-------------------------------------- Estilado General -------------------------------------- */
 
 * {
   margin: 0px;
@@ -9,10 +9,12 @@
 
 h4 {
   font-size: 16px;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 18px;
+  font-weight: 600;
 }
 
 button {
@@ -33,12 +35,17 @@ img {
   max-width: 40px;
 }
 
+i {
+  font-size: 18px;
+}
+
 /*-------------------------------------- Estilado del aside -------------------------------------- */
 
 .sidebar {
   background-color: #fefefe;
   min-width: 200px;
-  max-width: 350px;
+  max-width: 300px;
+  width: 20%;
   padding: 15px;
   gap: 20px;
   display: flex;
@@ -120,11 +127,26 @@ main {
   border-bottom-style: inset;
 }
 
+.active-person {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
 .chat-header {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  padding: 10px;
+}
+
+.chat-header i {
+  display: none;
+}
+
+.chat-actions {
   padding: 10px;
 }
 
@@ -177,4 +199,68 @@ main {
   border: 1px;
   border-color: #cacaca;
   border-style: inset;
+}
+
+/*-------------------------------------- Responsive y Breakpoints -------------------------------------------------*/
+
+/*-------------------------------------- Prmier Breakpoint: Celular -------------------------------------------------*/
+
+@media(max-width: 576px) {
+
+  .sidebar {
+    display: none;
+  }
+
+  .message-sent {
+    max-width: 85%;
+  }
+
+  .message-recived {
+    max-width: 85%;
+  }
+
+  .chat-header i {
+    display: flex;
+  }
+
+  .btn-action {
+    display: none;
+  }
+
+  .active-person {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+  }
+
+}
+
+/*-------------------------------------- Segundo Breakpoint: Tablet -------------------------------------------------*/
+
+@media(max-width: 992px) {
+
+  .sidebar {
+    max-width: 200px;
+  }
+
+  .message-sent {
+    max-width: 85%;
+  }
+
+  .message-recived {
+    max-width: 85%;
+  }
+
+  .btn-action {
+    display: none;
+  }
+
+  .active-person {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+  }
+
 }

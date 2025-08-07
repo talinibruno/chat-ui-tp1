@@ -11,14 +11,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
     rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
 
 <body>
 
   <aside class="sidebar">
+
     <input type="search" placeholder="Search..." class="search">
 
     <ul class="contact-list">
@@ -71,7 +72,6 @@
         </div>
       </li>
 
-
     </ul>
 
   </aside>
@@ -79,21 +79,24 @@
   <main class="chat">
 
     <section class="active-chat">
+
       <div class="chat-header">
+        <i class="bi bi-arrow-left-short"></i>
         <img src="avatar.jpeg" alt="imagen de perfil del contacto">
-        <h3>Aiden Chavez</h3>
-        <p></p>
+        <div class="active-person">
+          <h3>Aiden Chavez</h3>
+          <p>Last seen: 2 hours ago</p>
+        </div>
       </div>
 
       <div class="chat-actions">
-
-        <button title="Adjuntar">📎</button>
-        <button title="Sacar foto">📷</button>
-        <button>🖼️</button>
-        <button>⚙️</button>
-        <button>❓</button>
-
+        <button class="btn-attach" title="Adjuntar documento"><i class="bi bi-paperclip"></i></button>
+        <button class="btn-picture" title="Sacar foto"><i class="bi bi-camera-fill"></i></button>
+        <button class="btn-action" title="Adjuntar imagen"><i class="bi bi-image-fill"></i></button>
+        <button class="btn-action" title="Configuración"><i class="bi bi-gear-fill"></i></button>
+        <button class="btn-action" title="Ayuda y preguntas frecuentes"><i class="bi bi-question-circle"></i></button>
       </div>
+
     </section>
 
     <section class="chat-messages">
@@ -116,8 +119,10 @@
     </section>
 
     <section class="chat-footer">
+
       <input type="text" placeholder="Enter text here...">
-      <button>✈️</button>
+      <button><i class="bi bi-send-fill"></i></button>
+
     </section>
 
   </main>

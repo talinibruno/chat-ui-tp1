@@ -7,7 +7,7 @@ Proyecto de maquetado de aplicación de mensajería.
 
 CONSIDERACIONES DEL PROYECTO ACTUAL:
 
-1. No se utiliza Bootstrap (se quitó vinculación)
+1. No se utiliza Bootstrap (se quitó vinculación) sólo se utilizan los svg que brinda para los íconos.
 
 2. Existen 3 breakpoints: 
   a. El primer breakpoint es hasta 300px, adaptado para una pantalla muy chica

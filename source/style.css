@@ -4,23 +4,24 @@
   margin: 0px;
   padding: 0px;
   font-family: Manrope;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
+  color: #0F172A;
 }
 
 button {
   background: none;
   border: none;
-  font-size: 18px;
+  font-size: 20px;
   padding: 5px;
 }
 
@@ -35,18 +36,19 @@ img {
   max-width: 40px;
 }
 
-i {
-  font-size: 18px;
+svg {
+  color: #0F172A;
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
+  color: #475569;
 }
 
 /*-------------------------------------- Estilado del aside -------------------------------------- */
 
 .sidebar {
-  background-color: #fefefe;
+  background-color: #FFFFFF;
   min-width: 200px;
   max-width: 300px;
   width: 20%;
@@ -56,7 +58,7 @@ p {
   flex-direction: column;
   align-items: center;
   border-right: 1px;
-  border-right-color: #cacaca;
+  border-right-color: #BFD4FF;
   border-right-style: inset;
 }
 
@@ -82,18 +84,18 @@ p {
   align-items: center;
   gap: 10px;
   padding: 5px;
-  background-color: #efefef;
-  border-radius: 5px;
+  background-color: #e4f1f7;
+  border-radius: 10px;
 }
 
 .status-offline {
   color: #686e73;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .status-online {
   color: #686e73;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .status-offline::before {
@@ -105,13 +107,28 @@ p {
 }
 
 .sidebar input {
-  padding: 5px;
+  border: 2px solid transparent;
   width: 100%;
-  border-radius: 5px;
-  border: 1px;
-  border-color: #cacaca;
-  border-style: inset;
+  height: 40px;
+  padding-left: 10px;
+  background-color: #E8F3FF;
+  border-color: #CFE1FF;
+  border-width: 1px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  font-size: 16px;
 }
+
+
+.sidebar input:hover,
+.sidebar input:focus {
+  border: 2px solid #3B82F6;
+  outline: none;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+
 
 /*-------------------------------------- Estilado del main -------------------------------------------------*/
 
@@ -127,7 +144,7 @@ main {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px;
-  border-bottom-color: #cacaca;
+  border-bottom-color: #BFD4FF;
   border-bottom-style: inset;
 }
 
@@ -158,11 +175,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #f7f8fa;
+  background-color: #ffffff;
   flex: 1;
   padding: 15px;
   gap: 15px;
-
+  border: none;
 }
 
 .message-sent {
@@ -171,6 +188,8 @@ main {
   padding: 10px;
   border-radius: 10px;
   max-width: 50%;
+  color: #202020;
+  font-size: 16px;
 }
 
 .message-recived {
@@ -178,10 +197,12 @@ main {
   padding: 10px;
   border-radius: 10px;
   max-width: 50%;
+  color: #202020;
+  font-size: 16px;
 }
 
 .timestamp {
-  color: #686e73;
+  color: #64748B;
   font-size: 12px;
 }
 
@@ -191,25 +212,34 @@ main {
   gap: 10px;
   padding: 15px;
   border-top: 1px;
-  border-top-color: #cacaca;
-  border-top-style: inset;
-
+  border-top-color: #BFD4FF;
+  border-top-style: outset;
 }
 
 .chat-footer input {
-  padding: 5px;
+  border: 2px solid transparent;
   width: 100%;
-  border-radius: 5px;
-  border: 1px;
-  border-color: #cacaca;
-  border-style: inset;
+  height: 40px;
+  padding-left: 10px;
+  background-color: #E8F3FF;
+  border-radius: 10px;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+
+.chat-footer input:hover,
+.chat-footer input:focus {
+  border: 2px solid #4A9DEC;
+  outline: none;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
 }
 
 /*-------------------------------------- Responsive y Breakpoints -------------------------------------------------*/
 
 /*-------------------------------------- Primer Breakpoint: MiniScreen? -------------------------------------------------*/
 
-@media(max-width: 300px) {
+@media(max-width: 350px) {
 
   .sidebar {
     display: none;
@@ -221,10 +251,6 @@ main {
 
   .message-recived {
     max-width: 100%;
-  }
-
-  .chat-header i {
-    display: flex;
   }
 
   .btn-attach {
@@ -260,10 +286,6 @@ main {
     max-width: 85%;
   }
 
-  .chat-header i {
-    display: flex;
-  }
-
   .active-person {
     display: flex;
     flex-direction: column;
@@ -279,6 +301,10 @@ main {
 
   .sidebar {
     max-width: 200px;
+  }
+
+  .menu {
+    display: none;
   }
 
   .message-sent {
@@ -301,3 +327,19 @@ main {
   }
 
 }
+
+/*-------------------------------------- Cuarto Breakpoint: Desktop -------------------------------------------------*/
+
+@media(min-width: 780px) {
+
+  .menu {
+    display: none;
+  }
+
+  .message-sent {
+    max-width: 50%;
+  }
+
+  .message-recived {
+    max-width: 50%;
+  }

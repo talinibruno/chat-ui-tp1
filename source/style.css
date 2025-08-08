@@ -4,7 +4,7 @@
   margin: 0px;
   padding: 0px;
   font-family: Manrope;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 h4 {
@@ -37,6 +37,10 @@ img {
 
 i {
   font-size: 18px;
+}
+
+p {
+  font-size: 14px;
 }
 
 /*-------------------------------------- Estilado del aside -------------------------------------- */
@@ -203,7 +207,44 @@ main {
 
 /*-------------------------------------- Responsive y Breakpoints -------------------------------------------------*/
 
-/*-------------------------------------- Prmier Breakpoint: Celular -------------------------------------------------*/
+/*-------------------------------------- Primer Breakpoint: MiniScreen? -------------------------------------------------*/
+
+@media(max-width: 300px) {
+
+  .sidebar {
+    display: none;
+  }
+
+  .message-sent {
+    max-width: 100%;
+  }
+
+  .message-recived {
+    max-width: 100%;
+  }
+
+  .chat-header i {
+    display: flex;
+  }
+
+  .btn-attach {
+    display: none;
+  }
+
+  .btn-picture {
+    display: none;
+  }
+
+  .active-person {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+  }
+
+}
+
+/*-------------------------------------- Segundo Breakpoint: Celular -------------------------------------------------*/
 
 @media(max-width: 576px) {
 
@@ -223,10 +264,6 @@ main {
     display: flex;
   }
 
-  .btn-action {
-    display: none;
-  }
-
   .active-person {
     display: flex;
     flex-direction: column;
@@ -236,9 +273,9 @@ main {
 
 }
 
-/*-------------------------------------- Segundo Breakpoint: Tablet -------------------------------------------------*/
+/*-------------------------------------- Tercer Breakpoint: Tablet -------------------------------------------------*/
 
-@media(max-width: 992px) {
+@media(max-width: 780px) {
 
   .sidebar {
     max-width: 200px;

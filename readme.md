@@ -1,9 +1,14 @@
 # TRABJO PRÁCTICO Nro 1 - UTN FullStack
 
 Dev: Bruno Talini
+Curso: Frontend UNT - 999198241
+
+########################################
 
 Consigna:
 Proyecto de maquetado de aplicación de mensajería.
+
+########################################
 
 CONSIDERACIONES DEL PROYECTO ACTUAL:
 
@@ -17,3 +22,5 @@ CONSIDERACIONES DEL PROYECTO ACTUAL:
 3. Se utilizó el font "Manrope"
 "https://fonts.google.com/specimen/Manrope"
 
+
+########################################
